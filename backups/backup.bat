@@ -8,8 +8,9 @@ REM - Criado por: Tiago de Abreu
 REM - 
 REM -
 REM - VARIAVEIS
+set "dateStamp=%DATE:~6,4%%DATE:~3,2%%DATE:~0,2%"
 set ORIGEM=C:\xampp
-set DESTINO="C:\bkp_server_ti"
+set DESTINO="C:\bkp_server_ti\%dateStamp%"
 set LOG=C:\bkp_server_ti\LOG
 set EMAIL=devstackpro@gmail.com
 REM - ESTRUTURA
