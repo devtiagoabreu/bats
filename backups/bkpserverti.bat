@@ -1,5 +1,19 @@
 @echo off
 
+
+echo on
+set ORIGEM="C:\arquivos"
+set SAIDA="C:\saida"
+set 7zip="c:\Program Files\7-Zip\7z.exe"
+for /d %%X in (%ORIGEM%) do %7zip% a -t7z %SAIDA%\%%X.7Z
+
+
+
+set ORIGEM="C:\arquivos\*.*"
+set SAIDA="C:\saida\"
+FOR %%i IN (%ORIGEM%) DO 7z.exe a "%SAIDA%%%~ni.7z" "%%i"
+
+
 rem Define a pasta de instalação do 7-Zip
 set "sevenZipPath=C:\Program Files\7-Zip\7z.exe"
 
