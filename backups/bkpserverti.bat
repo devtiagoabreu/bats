@@ -9,9 +9,7 @@ for /d %%X in (%ORIGEM%) do %7zip% a -t7z %SAIDA%\%%X.7Z
 
 
 
-set ORIGEM="C:\arquivos\*.*"
-set SAIDA="C:\saida\"
-FOR %%i IN (%ORIGEM%) DO 7z.exe a "%SAIDA%%%~ni.7z" "%%i"
+
 
 
 rem Define a pasta de instalação do 7-Zip
