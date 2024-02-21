@@ -9,8 +9,8 @@ REM -
 REM -
 REM - VARIAVEIS
 set "dateStamp=%DATE:~6,4%%DATE:~3,2%%DATE:~0,2%"
-set ORIGEM=C:\capturasDeTelas
-set DESTINO="C:\bkp_server_ti\capturasDeTelas%dateStamp%"
+set ORIGEM=C:\capturaDeTelas
+set DESTINO="C:\bkp_server_ti\capturaDeTelas%dateStamp%"
 set LOG=C:\bkp_server_ti\LOG
 set EMAIL=devstackpro@gmail.com
 REM - ESTRUTURA
