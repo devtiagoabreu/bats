@@ -2,7 +2,7 @@ cls
 echo off
 cls
 REM -
-REM - 100SECURITY
+REM - 
 REM - 
 REM - Criado por: Tiago de Abreu
 REM - 
@@ -10,18 +10,19 @@ REM -
 REM - VARIAVEIS
 set "dateStamp=%DATE:~6,4%%DATE:~3,2%%DATE:~0,2%"
 set ORIGEM=C:\xampp
-set DESTINO="C:\bkp_server_ti\%dateStamp%"
+set DESTINO="C:\bkp_server_ti\xampp%dateStamp%"
 set LOG=C:\bkp_server_ti\LOG
 set EMAIL=devstackpro@gmail.com
 REM - ESTRUTURA
 echo # - - - - - - - - - - - - - - - - - - - - - - - - - #
 echo #         COPIA DE ARQUIVOS E/OU DIRETORIOS         #
 echo # - - - - - - - - - - - - - - - - - - - - - - - - - #
-xcopy %ORIGEM% %DESTINO% /E /Y /C /H
+xcopy %ORIGEM% %DESTINO% /E /Y /C /H /I
 REM /E - Copia diretórios e subdiretórios, inclusive os vazios.
 REM /Y - Suprime o prompt para você confirmar se deseja substituir um arquivo de destino existente.
 REM /C - Continua copiando, mesmo que ocorram erros.
 REM /H - Copia arquivos ocultos e do sistema também.
+REM /I - Cria um diretório se o destino não existir por completo.
 echo # - - - - - - - - - - - - - - - - - - - - - - - - - #
 echo # GERANDO LOG DE ARQUIVOS E/OU DIRETORIOS COPIADOS  #
 echo # - - - - - - - - - - - - - - - - - - - - - - - - - #
